@@ -1,0 +1,294 @@
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image:url('layout/blue_pattern.png');
+	background-color:#52c0ec;
+	text-align:center;
+}
+
+td,th {
+	background-image:none;
+}
+
+.gallery_wrapper{
+	text-align:left;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	/* 756px minus 2x10px padding */
+	width:736px;
+	display:block;
+	background:#FFF;
+	/*border:1px solid #0b7fde;*/
+	padding:10px;
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	line-height:1.7em;
+}
+
+h1{
+	margin-top:0px;
+	text-shadow: 1px 1px #CCCCCC;
+}
+
+a:link, a:visited{
+	color:#11a2e4;
+}
+
+.gallery_footer{
+	width:756px;
+	display:block;
+	margin:auto;
+	color:#FFFFFF;
+	
+	text-shadow: -1px -1px #555555;
+}
+
+.gallery_footer a:link, .gallery_footer a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+
+/* normal liquid button */
+a.liquid_button{
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	background-color:#07aaff;
+	border:1px solid #0b7fde;
+	padding:5px;
+	display:inline-block;
+	background: url(layout/liquid_button.gif) no-repeat;
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+a.liquid_button:hover{
+	background-position:0px -50px;
+}
+
+/* disabled liquid button */
+a.liquid_button_disabled{
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	background-color:#07aaff;
+	border:1px solid #a7a7a7;
+	padding:5px;
+	display:inline-block;
+	background: url(layout/liquid_button.gif) no-repeat 0px -100px;
+	cursor:default;
+}
+
+
+a.liquid_button_red{
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	background-color:#EA0000;
+	border:1px solid #A00;
+	padding:5px;
+	display:inline-block;
+	background: url(layout/liquid_button_red.gif) no-repeat;
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+a.liquid_button_red:hover{
+	background-position:0px -50px;
+}
+
+input{
+	border-style:inset;
+	border:1px solid #CCC;
+	padding:5px;
+}
+
+input.button_110{
+	border:none;
+	color:#FFF;
+	background-color:#07aaff;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	padding:3px;
+	width:110px;
+	height:30px;
+	padding-left:10px;
+	padding-right:10px;
+	/* note that it is "background" NOT "background-image", that would not work in IE and PNG would not be 100% transp*/
+	background: url(layout/button_110.gif) no-repeat;
+	cursor:pointer;
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+input.button_110:hover{
+	background-position:0px -30px;
+}
+
+
+input.button_190{
+	border:none;
+	color:#FFF;
+	background-color:#07aaff;
+	font-size:13px;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	padding:3px;
+	width:190px;
+	height:30px;
+	padding-left:10px;
+	padding-right:10px;
+	/* note that it is "background" NOT "background-image", that would not work in IE and PNG would not be 100% transp*/
+	background: url(layout/button_190.gif) no-repeat;
+	cursor:pointer;
+	
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+input.button_190:hover{
+	background-position:0px -30px;
+}
+
+
+
+input.cancel_button_30{
+	border:none;
+	background-color:#DF0005;
+	width:30px;
+	height:30px;
+	/* note that it is "background" NOT "background-image", that would not work in IE and PNG would not be 100% transp*/
+	background: url(layout/cancel_button_30.gif) no-repeat;
+	cursor:pointer;
+}
+input.cancel_button_30:hover{
+	background-position:0px -30px;
+}
+
+
+
+.message_success {
+	padding:4px;
+	padding-left:10px;
+	background-color:#009900;
+	border:1px solid #006600;
+	color:#FFFFFF;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.message_error {
+	padding:4px;
+	padding-left:10px;
+	background-color:#CE0000;
+	border:1px solid #990000;
+	color:#FFFFFF;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+
+.breadcrumb {
+	color:#999999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	margin-top:-10px;
+	margin-bottom:20px;
+	padding:0px;
+	letter-spacing:1px;
+	line-height:1.4em;
+}
+.breadcrumb a:link, .breadcrumb a:visited {
+	color:#999999;
+}
+.breadcrumb a:hover {
+	color:#333333;
+}
+
+
+
+
+/* category thumbnails >>> */
+
+.category_thumbnail_span{
+	display:inline-block; 
+	text-align:center; 
+	padding:5px; 
+	border:1px solid #CCC;
+	margin-top:5px;
+	margin-right:5px;
+	overflow:hidden;
+}
+
+.category_thumbnail_span img{
+	border:0px;
+}
+
+a.category_thumbnail_image{
+	display:inline-block; 
+	background-repeat:no-repeat; 
+	background-position:center center;
+}
+
+a.category_thumbnail_title{
+	text-decoration:none;
+	display:inline-block;
+	padding-top:4px;
+	text-transform:capitalize;
+}
+
+/* the small confirmation box that appears on the photo edit box, that says "data saved" */
+.photo_edit_confirmation{
+	background-color:#89d0f1; 
+	border:1px solid #85bfef; 
+	color:#FFFFFF; 
+	text-shadow: -1px -1px #12a1e2; 
+	letter-spacing:1px; 
+	text-transform:uppercase;
+	padding:6px;
+	padding-left:10px;
+	padding-right:10px;
+	cursor:default;
+	border-radius:4px;
+	float:left;
+}
+
+.photo_edit_error{
+	background-color:#EA0000;
+	border:1px solid #A00;
+	color:#FFFFFF; 
+	letter-spacing:1px; 
+	text-transform:uppercase;
+	padding:6px;
+	padding-left:10px;
+	padding-right:10px;
+	cursor:default;
+	border-radius:4px;
+	float:left;
+}
+
+.red_text{
+	color:#EC0006;
+}
+
+.green_text{
+	color:#090;
+}

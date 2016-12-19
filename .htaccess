@@ -1,0 +1,34 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# On some servers the url rewrite didn't work; in that case try uncommenting this line and write your path there, e.g /gallery
+# RewriteBase /gallery
+
+RewriteRule ^admin(/)?$ admin.php [QSA]
+RewriteRule ^admin-categories(/)?$ admin_categories.php [QSA]
+RewriteRule ^admin-category-edit(/)?$ admin_category_edit.php [QSA]
+RewriteRule ^admin-regenerate-images(/)?$ admin_regenerate_images.php [QSA]
+
+RewriteRule ^login(/)?$ login.php [QSA]
+RewriteRule ^logout(/)?$ logout.php [QSA]
+RewriteRule ^upload(/)?$ upload.php [QSA]
+
+
+# rewrite the URL of photos, to avoid the "/files" path in URL
+RewriteRule ^([^/]+)/([^/]+)_thumb.jpg$ files/$1/$2_thumb.jpg [QSA]
+
+# the thumbnail of the category
+RewriteRule ^([^/]+).jpg$ files/$1/thumbnail.jpg [QSA]
+
+# the _small.jpg (display image)
+RewriteRule ^([^/]+)/([^/]+)_small.jpg$ files/$1/$2_small.jpg [QSA]
+
+RewriteRule ^([^/]+)/edit-photos/?$ admin_edit_photos.php?cat_url_string=$1 [QSA]
+
+# before matching this greedy rule, test if file exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^([^/]+)/?$ category.php?cat_url_string=$1 [QSA]
+
