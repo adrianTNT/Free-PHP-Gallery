@@ -1,0 +1,2 @@
+We created this dummy file to prevent this folder from being empty at any time.
+Because some unzipping tools and some FTP programs ignore empty directories.
