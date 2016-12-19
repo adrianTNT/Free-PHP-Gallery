@@ -11,8 +11,6 @@ RewriteRule ^admin-regenerate-images(/)?$ admin_regenerate_images.php [QSA]
 
 RewriteRule ^login(/)?$ login.php [QSA]
 RewriteRule ^logout(/)?$ logout.php [QSA]
-RewriteRule ^upload(/)?$ upload.php [QSA]
-
 
 # rewrite the URL of photos, to avoid the "/files" path in URL
 RewriteRule ^([^/]+)/([^/]+)_thumb.jpg$ files/$1/$2_thumb.jpg [QSA]
