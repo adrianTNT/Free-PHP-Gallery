@@ -1,5 +1,5 @@
-Free PHP Gallery by adrianTNT.com
-================================= 
+Free PHP Gallery by TNTcode.com
+=============================== 
 
 - unzip all files from this zip
 - edit settings.php file and set your own admin username / password
@@ -34,4 +34,4 @@ Replace the path /gallery with your own path if needed
 
 
 
-If you need any help contact us at http://www.adriantnt.com/contact/ 
+If you need any help contact us at https://www.tntcode.com/contact/
